@@ -1,0 +1,5 @@
+C:\Users\marib_000\Downloads\mp2-lab9-plex\CppWinForm1\x64\Debug\CppWinForm1.vcxprojAssemblyReference.cache
+C:\Users\marib_000\Downloads\mp2-lab9-plex\CppWinForm1\x64\Debug\CppWinForm1.MyForm.resources
+C:\Users\marib_000\Downloads\mp2-lab9-plex\CppWinForm1\x64\Debug\CppWinForm1.vcxproj.GenerateResource.cache
+C:\Users\marib_000\Downloads\mp2-lab9-plex\CppWinForm1\x64\Debug\CppWinForm1.exe
+C:\Users\marib_000\Downloads\mp2-lab9-plex\CppWinForm1\x64\Debug\CppWinForm1.pdb
