@@ -91,7 +91,7 @@ namespace CppWinForm1 {
 			// 
 			this->button1->Location = System::Drawing::Point(12, 12);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(116, 102);
+			this->button1->Size = System::Drawing::Size(123, 24);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Нарисовать треугольник";
 			this->button1->UseVisualStyleBackColor = true;
@@ -99,9 +99,9 @@ namespace CppWinForm1 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(12, 236);
+			this->button2->Location = System::Drawing::Point(141, 12);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(116, 42);
+			this->button2->Size = System::Drawing::Size(114, 24);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Скрыть";
 			this->button2->UseVisualStyleBackColor = true;
@@ -109,9 +109,9 @@ namespace CppWinForm1 {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(12, 284);
+			this->button3->Location = System::Drawing::Point(261, 12);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(116, 42);
+			this->button3->Size = System::Drawing::Size(108, 24);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Переместить";
 			this->button3->UseVisualStyleBackColor = true;
@@ -119,14 +119,14 @@ namespace CppWinForm1 {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(12, 332);
+			this->textBox1->Location = System::Drawing::Point(385, 16);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(57, 20);
 			this->textBox1->TabIndex = 3;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(71, 332);
+			this->textBox2->Location = System::Drawing::Point(473, 16);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(57, 20);
 			this->textBox2->TabIndex = 4;
@@ -134,7 +134,7 @@ namespace CppWinForm1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(12, 355);
+			this->label1->Location = System::Drawing::Point(382, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(31, 13);
 			this->label1->TabIndex = 5;
@@ -143,7 +143,7 @@ namespace CppWinForm1 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(68, 355);
+			this->label2->Location = System::Drawing::Point(470, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(31, 13);
 			this->label2->TabIndex = 6;
@@ -151,9 +151,9 @@ namespace CppWinForm1 {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(12, 130);
+			this->button4->Location = System::Drawing::Point(-4, 332);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(116, 100);
+			this->button4->Size = System::Drawing::Size(10, 23);
 			this->button4->TabIndex = 7;
 			this->button4->Text = L"Нарисовать зиг-заг";
 			this->button4->UseVisualStyleBackColor = true;
@@ -183,18 +183,93 @@ namespace CppWinForm1 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		TPoint* A = new TPoint(100, 200);
+		TPoint* B = new TPoint(150, 180);
+		TPoint* C = new TPoint(200, 100);
+		TPoint* D = new TPoint(250, 150);
+		TPoint* E = new TPoint(300, 120);
+		TPoint* F = new TPoint(270, 200);
+		TPoint* G = new TPoint(300, 270);
+		TPoint* H = new TPoint(250, 250);
+		TPoint* I = new TPoint(200, 300);
+		TPoint* J = new TPoint(150, 220);
+		TPoint* K = new TPoint(270, 350);
+		TPoint* L = new TPoint(300, 500);
+		TPoint* M = new TPoint(220, 200);
+
+		TPoint* S = new TPoint(230, 240);
+
+		TChart* AB = new TChart;
+		TChart* BC = new TChart;
+		TChart* CD = new TChart;
+		TChart* DE = new TChart;
+		TChart* EF = new TChart;
+		TChart* FG = new TChart;
+
+		TChart* GH = new TChart;
+		TChart* SH = new TChart;
+
+		TChart* HI = new TChart;
+		TChart* IJ = new TChart;
+		TChart* JA = new TChart;
+		TChart* AM = new TChart;
+		TChart* MK = new TChart;
+		TChart* KL = new TChart;
+
+		CurrPoint->SetX(-1);
+		CurrPoint->SetY(-1);
+
+		AB->SetFirst(A);
+		AB->SetLast(B);
+		BC->SetFirst(AB);
+		BC->SetLast(C);
+		CD->SetFirst(BC);
+		CD->SetLast(D);
+		DE->SetFirst(CD);
+		DE->SetLast(E);
+		EF->SetFirst(DE);
+		EF->SetLast(F);
+		FG->SetFirst(EF);
+		FG->SetLast(G);
+
+
+		GH->SetFirst(FG);
+		GH->SetLast(H);
+		/*GS->SetFirst(FG);
+		GS->SetLast(S);*/
+
+		HI->SetFirst(GH);
+		HI->SetLast(I);
+		IJ->SetFirst(HI);
+		IJ->SetLast(J);
+		JA->SetFirst(IJ);
+		JA->SetLast(A);
+		AM->SetFirst(JA);
+		AM->SetLast(M); 
+		MK->SetFirst(AM);
+		MK->SetLast(K); 
+		KL->SetFirst(MK);
+		KL->SetLast(L);
+
+
+		Plex->SetFirst(MK);
+		Plex->SetLast(L);
+		Plex->Show(gr, Pens::Black);
+		Plex->SetVisible(true);
+		/*TPoint* B = new TPoint(400, 200);
+		TPoint* C = new TPoint(200, 400);
+		TPoint* D = new TPoint(400, 400);
+		TPoint* A = new TPoint(200, 200);
+
 		TChart* BC = new TChart;
 		TChart* CA = new TChart;
 		TChart* AB = new TChart;
 		TChart* BD = new TChart;
 		TChart* DC = new TChart;
-		TPoint* B = new TPoint(400, 200);
-		TPoint* C = new TPoint(200, 400);
-		TPoint* D = new TPoint(400, 400);
-		TPoint* A = new TPoint(200, 200);
 
 		CurrPoint->SetX(-1);
 		CurrPoint->SetY(-1);
+
 		AB->SetFirst(A);
 		AB->SetLast(B);
 		BD->SetFirst(AB);
@@ -206,7 +281,7 @@ namespace CppWinForm1 {
 		Plex->SetFirst(BD);
 		Plex->SetLast(A);
 		Plex->Show(gr, Pens::Black);
-		Plex->SetVisible(true);
+		Plex->SetVisible(true);*/
 	}
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (Plex->GetVisible())
@@ -215,6 +290,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 		Plex->SetVisible(false);
 	}
 }
+	   //перенос
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	int x = Convert::ToInt32(textBox1->Text);
 	int y = Convert::ToInt32(textBox2->Text);
