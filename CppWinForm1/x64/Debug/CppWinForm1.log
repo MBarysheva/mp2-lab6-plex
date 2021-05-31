@@ -1,4 +1,4 @@
 ﻿  MyForm.cpp
   MyForm.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
   MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  CppWinForm1.vcxproj -> C:\Users\marib_000\Downloads\mp2-lab9-plex\CppWinForm1\x64\Debug\CppWinForm1.exe
+  CppWinForm1.vcxproj -> C:\Users\marib_000\Desktop\АиСД\mp2-lab6-plex\CppWinForm1\x64\Debug\CppWinForm1.exe
